@@ -1,0 +1,11 @@
+<launch>
+<!-- launch imu without rviz -->
+
+  <arg name="port" default="/dev/ttyUSB0" />
+  <node pkg="chip_imu_driver" type="chip_imu_driver_node" name="chip_imu_driver_node" output="screen">
+    <param name="port" value="$(arg port)" />
+  </node>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find chip_imu_driver)/launch/default_imu.rviz" />
+
+</launch>
