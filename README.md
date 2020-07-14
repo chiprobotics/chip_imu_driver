@@ -1,5 +1,5 @@
 # chip_imu_driver
-ROS driver for Chip Robotics IMU Sensor
+ROS driver for Chip Robotics IMU Sensor  https://chiprobotics.com/chip-robotics-imu-sensor/
 
 For imu visualization make sure you have the rviz imu plugin installed 
 
